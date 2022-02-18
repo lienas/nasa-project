@@ -21,7 +21,7 @@ function loadPlanetsData() {
                 if (isHabitablePlanet(data)) {
                     //habitablePlanets.push(data)
                     // insert + update = upsert
-                   await savePlanet(data);
+                    await savePlanet(data);
                 }
             })
             .on('error', (err => {
@@ -38,7 +38,9 @@ function loadPlanetsData() {
 
 async function getAllPlanets() {
     // return habitablePlanets;
-    return planets.find({});
+    return planets.find({}, {
+        __v: 0, _id: 0
+    });
 }
 
 async function savePlanet(planet) {
