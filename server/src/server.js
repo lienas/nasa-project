@@ -12,7 +12,9 @@ const server = http.createServer(app);
 
 async function startServer() {
     // options are unnecessary from v6 above
+    console.log('mongoConnect');
     await mongoConnect();
+    console.log('loadPlanetsData');
     await loadPlanetsData();
     await loadLaunchData();
 
