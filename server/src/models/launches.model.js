@@ -6,7 +6,6 @@ const axios = require('axios');
 const DEFAULT_FLIGHT_NR = 100;
 
 //let latestFliegtNumber = 100;
-
 // launches.set(latestFliegtNumber, launch);
 
 const SPACEX_API_URL = 'https://api.spacexdata.com/v4/launches/query';
