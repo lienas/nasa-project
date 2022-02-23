@@ -1,0 +1,6 @@
+.git
+.idea
+server/public
+*/node_modules
+server/package-lock.json
+client/package-lock.json
